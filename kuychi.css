@@ -1,0 +1,307 @@
+* {box-sizing:border-box}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 15px;
+/*     border: 1px solid red; */
+}
+@media only screen and (min-width: 850px) {
+.col-1 {width: 8.33%;}
+.col-15 {width: 12.5%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+body{
+  background-color:rgb(168, 224, 72, 0.4);
+}
+/* RESPONSIVE NAVBAR */
+.topnav {
+  z-index:3;
+  background: url("https://farm5.staticflickr.com/4779/40657383641_ef2b503f0c_z.jpg");
+  overflow: hidden;
+  border-bottom: 3px solid rgba(87, 31, 183, 0.3);
+  border-radius: 5px;
+  font-family: 'Frijole', cursive;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #571fb7;
+  text-align: center;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: rgba(87, 31, 183);
+  color: #A8E048; /*#1FB8A3*/
+}
+.topnav .navactive {
+  background-color: #A8E048;
+}
+.topnav .navsmall {
+  display: none;
+}
+@media screen and (max-width: 725px) {
+  .topnav .navsmall {
+    display: initial;
+  }
+  .topnav .navbig {
+    display: none;
+  }
+  .topnav .navactive {
+    display: block;
+  }  
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+/* LANGUAGE CHANGE */
+#language {
+  float: right;
+  padding: 10px 20px;
+  font-size: 25px;
+}
+.langHide {
+  display: none;
+}
+.langShow {
+  display: initial;
+}
+/* LANGUAGE CHANGE */
+/* RESPONSIVE NAVBAR */
+
+/* PICTURE CAROUSEL */
+.slideshow-container {
+  max-width:800px;
+  position: relative;
+  margin: auto;
+  padding: 20px 0px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+  padding-top:50px;
+}
+.imagecar {
+  border: 3px solid rgba(87, 31, 183, 0.3);
+  border-radius: 5px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(87, 31, 183, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: rgba(87, 31, 183, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+}
+
+ .active, .dot:hover {
+  background-color: rgba(87, 31, 183, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* PICTURE CAROUSEL */
+
+/* ABOUT */
+.about {
+  height:auto;
+  margin:50px 0px;
+  padding:10px 10px 20px 10px;
+  background: url("https://farm5.staticflickr.com/4779/40657383641_ef2b503f0c_z.jpg") no-repeat;
+  background-size:cover;
+}
+#abouttitle {
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  color: #571fb7;
+  font-family: 'Frijole', cursive;
+  font-size: 3em;
+  line-height: 100% ;
+}
+.about p {
+  margin: 0px 0px;
+  padding: 20px 10px;
+  color: #571fb7;
+  font-family: 'Lato', sans-serif;
+  line-height: 150%;
+}
+#textparagraph{
+  text-indent: 3%;
+  font-weight:500;
+}
+/* add media queries to make it fit better */
+/*@media screen and (max-width: 850px) {
+  .about p {
+  margin: 0px 0px;
+  padding: 0px 0px;
+}*/
+/* ABOUT */
+
+/* GOODIES */
+.projects {
+  height:auto;
+  margin:50px 0px;
+  padding:50px 50px 50px 50px;
+  
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid rgba(87, 31, 183, 0.3);
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 90%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /*border-radius:50%;*/
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #571fb7;
+  border-radius: 5px;
+}
+.text {
+  z-index:2;
+  display: none;
+  color: white;
+  font-family: 'Lato';
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+/*   transition: 10s ease; */
+}
+.text a {
+  text-decoration: none;
+  color: white;
+}
+.container:hover .overlay {
+  opacity: .8;
+}
+.container:hover .text {
+  display: initial;
+}
+/* GOODIES */
+
+/* FOOTER */
+.footer {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://farm5.staticflickr.com/4779/40657383641_ef2b503f0c_z.jpg");
+  padding: 10px 10px;
+  border-top: 3px solid rgba(87, 31, 183, 0.3);
+  border-radius: 5px;
+}
+.footer a {
+  display:block;
+}
+
+.contact-foot:hover {
+ background-color: rgba(87, 31, 183);
+  color: #A8E048;
+  padding:10px;
+  border-radius:5px;
+}
+.contact-foot {
+  color: #571fb7;
+  font-family:'Frijole', cursive;
+  font-size: .8em;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 425px) {
+  .contact-foot {font-size: 1em;}
+}
+#copyright {
+  text-align: center;
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  font-weight:bold;
+}
+/* FOOTER */

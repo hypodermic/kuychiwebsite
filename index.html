@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>K'uychi</title>
+    <link href="kuychi.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Frijole|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+
+    <!-- RESPONSIVE NAVBAR -->
+<div class="topnav" id="myTopnav">
+      <a href="#piccarousel" class="navactive"><i class="fas fa-home"></i></a>
+<!--  Big Nav Bar  -->
+<!--  English  -->
+  <div id="english">
+      <a class="navbig navabout" href="#about"><i class="fas fa-info-circle"></i> About</a>
+      <a class="navbig navprojects" href="#projects"><i class="fas fa-project-diagram"></i> Goodies</a>
+      <a class="navbig navblog" href="#blog"><i class="far fa-newspaper"></i> News</a>
+      <a class="navbig navcontact" href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
+    </div>
+ <!--  English  -->
+ <!--  Spanish  -->
+  <div class="langHide" id="spanish">
+      <a class="navbig navabout" href="#about"><i class="fas fa-info-circle"></i> Acerca</a>
+      <a class="navbig navprojects" href="#projects"><i class="fas fa-project-diagram"></i> Cosillas</a>
+      <a class="navbig navblog" href="#blog"><i class="far fa-newspaper"></i> Noticias</a>
+      <a class="navbig navcontact" href="#contact"><i class="fas fa-paper-plane"></i> Contacto</a>
+    </div>
+<!--  Spanish  -->
+<!--  Small Nav Bar  -->
+      <a class="navsmall" href="#about"><i class="fas fa-info-circle"></i></a>
+      <a class="navsmall" href="#projects"><i class="fas fa-project-diagram"></i></a>
+      <a class="navsmall" href="#blog"><i class="far fa-newspaper"></i></a>
+      <a class="navsmall" href="#contact"><i class="fas fa-paper-plane"></i></a>
+<!--  Small Nav Bar  -->
+<!--  LANGUAGE CHANGE  --> 
+      <a id="language"><i class="fas fa-language"></i></a>
+<!--  LANGUAGE CHANGE  -->  
+    </div>
+<!-- RESPONSIVE NAVBAR -->
+
+<!--       PICTURE CAROUSEL -->
+      <div id="piccarousel" class="slideshow-container">
+  <!-- Full-width images -->
+  <div class="mySlides fade">
+    <a href="https://www.instagram.com/kuychiproject/" target="_blank"><img class="imagecar" src="https://farm1.staticflickr.com/916/28376879047_bc5aacc6e0_z.jpg" alt="test1" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="https://www.instagram.com/kuychiproject/" target="_blank"><img class="imagecar" src="https://farm1.staticflickr.com/842/29375961338_f85bb518c7_z.jpg" alt="test2" style="width:100%"></a>
+  </div>
+
+  <div class="mySlides fade">
+    <a href="https://www.instagram.com/kuychiproject/" target="_blank"><img class="imagecar" src="https://farm1.staticflickr.com/916/28376879047_bc5aacc6e0_z.jpg" alt="test3" style="width:100%"></a>
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+ <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<!--       PICTURE CAROUSEL -->
+
+<!-- ABOUT -->
+<div class="about" id="about">
+  <div id="eng" class="row">
+    <div class="col-12">
+      <p id="abouttitle">What is it about?</p>
+    </div>
+    <div  class="col-12">
+      <p id="textparagraph">
+  
+        K'uychi Project is all about integrating traditional culture with technology, and the latest product is a simple mobile game featuring K'uychi, the book's heroine. This game integrates a character from peruvian mythology, Kon, god of rain and wind who became evil after humans forgot to bring him offerings. He punished them by turning the fertile lands in arid deserts, reason why the peruvian coast is mostly desertic. In the game K'uychi moves from side to side trying to collect rain dropplets while avoiding falling Kon, who is represented as having a feline face and a boneless body. My inspiration for Kon's illustration comes from Paracas textiles. During the game K'uychi has a verbal reponse whenever she collects an item, unu, para, haylli with rain droplets, sonqo with hearts, k'uychi with rainbow droplets and hearts. She also expresses pain when Kon falls on her. 
+       </p>
+     </div>
+  </div>
+  <div id="spa" class="row langHide">
+    <div class="col-12">
+      <p id="abouttitle">¿De que se trata?</p>
+    </div>
+    <div class="col-12">
+      <p id="textparagraph">Considering the important connection between Language and Culture, I decided to work on promoting regional languages among their younger speakers. Currently focusing on Quechua, a language  from the Andes which is rapidly declining due to many social factors, I wrote and illustrated a children's story and had it translated it with the help of a native speaker. It is my intention that bilingual children will benefit from written material in their language so they continue learning it and thus preserving their rich cultural traditions.
+        Considering the important connection between Language and Culture, I decided to work on promoting regional languages among their younger speakers. Currently focusing on Quechua, a language  from the Andes which is rapidly declining due to many social factors, I wrote and illustrated a children's story and had it translated it with the help of a native speaker. It is my intention that bilingual children will benefit from written material in their language so they continue learning it and thus preserving their rich cultural traditions.
+       </p>
+     </div>
+  </div>
+</div>
+<!-- ABOUT -->
+
+<!-- GOODIES -->
+<div class="projects" id="projects">
+  <div class="row">
+    <div class="col-4">
+      <div class="container">
+        <img src="https://farm2.staticflickr.com/1783/41437531830_244428fe4b_z.jpg" alt="game" alt="Avatar" class="image">
+        <div class="text">
+            <a href="" target="">Coming Soon!</a>
+          </div>
+        <div class="overlay">
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="container">
+        <img src="https://farm1.staticflickr.com/837/43197739122_0b19dc02c4_z.jpg" alt="book" alt="Avatar" class="image">
+        <div class="text">
+            <a href="" target="">Coming Soon!</a>
+          </div>
+        <div class="overlay">
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="container">
+        <img src="https://farm2.staticflickr.com/1790/29376739008_f312398caa_z.jpg" alt="instagram" alt="Avatar" class="image">
+        <div class="text">
+            <a href="https://www.instagram.com/kuychiproject/" target="_blank">@kuychiproject</a>
+          </div>
+        <div class="overlay">
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+<!-- GOODIES -->
+
+<!-- FOOTER -->
+<div id="contact" class="footer">
+        <div class="row">
+          <div class="col-12">
+            <a class="contact-foot" href="https://www.instagram.com/kuychiproject/" target="_blank"><i class="fab fa-instagram link"></i> @kuychiproject</a>
+           <a class="contact-foot" href="https://www.facebook.com/Kuychi-435800183533124/" target="_blank"><i class="fab fa-facebook-square"></i> k'uychi fan page</a>
+            <a class="contact-foot">
+              <i class="fas fa-envelope-square"></i><!--       <i class="far fa-envelope"></i> --> kuychiproject@gmail.com
+            </a>
+            <!--  English  -->
+  <div id="en">
+    <a class="contact-foot" href="https://www.paypal.me/kuychi" target="_blank"><i class="fab fa-paypal"></i> donate</a> <!--"fas fa-donate"-->
+    </div>
+            <!--  English  -->
+             <!--  Spanish  -->
+  <div class="langHide" id="sp">
+    <a class="contact-foot" href="https://www.paypal.me/kuychi" target="_blank"><i class="fab fa-paypal"></i> donaciones</a>
+    </div>
+            <!--  Spanish  -->
+          </div>
+        </div>
+        <p id="copyright">&#169; 2018 K'UYCHI PROJECT</p>
+</div>
+<!-- FOOTER -->
+  </body>
+</html>

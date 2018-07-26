@@ -47,7 +47,23 @@ function currentSlide(n) {
   bool = false;
   showSlides1(slideIndex = n);
 }
-
+//
+$(".prev").click(function(){
+  plusSlides(-1);
+});
+$(".next").click(function(){
+  plusSlides(1);
+});
+$("#dot1").click(function(){
+  currentSlide(1);
+});
+$("#dot2").click(function(){
+  currentSlide(2);
+});
+$("#dot3").click(function(){
+  currentSlide(3);
+});
+//
 function showSlides1(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");

@@ -26,7 +26,8 @@ function myFunction() {
     $('#spa').toggleClass('langShow');
     $('#en').toggleClass('langHide');
     $('#sp').toggleClass('langShow');
-    
+	$('#eng2').toggleClass('langHide');
+    $('#spa2').toggleClass('langShow');
   });
 // LANGUAGE CHANGE
 
